@@ -1,0 +1,12 @@
+Here I will put the main code using MaixPy v4, for the maix Cam lite.
+
+
+The purpose of the code is to:
+	-Take a photo trigger on button press.
+	
+	-Execute OCR and process Text on the Image.
+	
+	-Send the Text to ESP32 via UART. 
+			<OR> 
+	-Execute TTS on Text, and send the audio to ESP32.
+	
