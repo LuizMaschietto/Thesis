@@ -41,7 +41,7 @@ gray_page = cv2.cvtColor(page_img, cv2.COLOR_BGR2GRAY)
 thresh_page = cv2.adaptiveThreshold(gray_page, 255, cv2.ADAPTIVE_THRESH_MEAN_C,
                                     cv2.THRESH_BINARY_INV, 15, 10)
 
-# Usa morfologia para unir linhas em blocos (estrofes)
+# linhas em blocos (estrofes)
 kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (5, 20))
 morph = cv2.dilate(thresh_page, kernel, iterations=1)
 
